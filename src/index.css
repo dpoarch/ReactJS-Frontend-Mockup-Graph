@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+  background-color: #121C29;
+  height: 70px;
+  box-shadow: inset 0px -1px 0px #E2E2EA;
+}
+.uk-navbar-nav>li>a{
+  height: 20px;
+  left: 9.38%;
+  right: 86.04%;
+  top: calc(50% - 20px/2 - 440.5px);
+  text-transform: unset;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 15px !important;
+  line-height: 20px !important;
+  /* identical to box height */
+
+
+  color: #FFFFFF;
+}
+.logoImg{
+  background-color: #DC6041;
+  color:#FFFFFF;
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+.notif{
+  position: absolute;
+    background: red;
+    padding: 0px 7px;
+    border-radius: 200px;
+    font-size: 12px;
+    font-weight: normal;
+    top: 20px;
+    right: 15px;
+}
+.p_relative{
+  position: relative;
+}.avatar-img{
+  background-image: url('https://s3-alpha-sig.figma.com/img/c43f/094e/e0d8f8c82370e93add238f88d2db2586?Expires=1646006400&Signature=HRCZBKP-l8mq7U7gonhwotvIXSL2DnJMBt6zcYU0hO3A1UR6-OzvaAbSfBn6YivkPaZrE1zjZftdhlYV6dTY3QdRovirB1~cLf0uoYn443YlGpfZS7rN0olW~BCVohe27k3cnKxvZAc2FcDbX9PCPpNXQIrKGcRKNAEE2ExrSyso3d-4yDOJEcBOr1~nZ2MpBGIdbL92TFpShhskgIVKixhqytpGvMDEx~AchDEEfuPxajahk79kOV3Ihpy0E-IRmvJ3uxb2sZMnBGmD0DKrxuNZGXH6C4I5JkG65CQPWcdJFn0XfQ5MBZPqEqwDLW6qxRXvGy2DZnAF6BrL147Evg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  margin-left: 20px;
+  padding: 0px;
+}
+
+#root{
+  background: #f2f4ff !important
+}
+
+.items{
+  margin: 0px 10px !important;
+}
+
+.uk-card{
+  border-radius: 10px;
+}
+.uk-card-body{
+  padding: 25px 25px;
+}
+.uk-grid>*{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.contentTitle{
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 36px;
+  /* or 112% */
+
+  letter-spacing: 0.1px;
+
+  color: #121C29;
+}
+
+.uk-button, .uk-input{
+  border-radius: 5px;
+}
+.uk-input{
+  width: 400px;
+  padding-left:35px;
+}
+.uk-input::placeholder{
+  padding-left:35px;
+}
+.uk-button-yellow{
+  background:#FCD57B;
+  color:#222;
+  font-weight: normal;
+}
+.uk-button-orange{
+  background-color:#DC6041;
+  color: #fff;
+  font-weight: normal;
+}
+.button-expand{
+  padding: 0px 10px;
+}
+.filter-nav{
+  padding: 0;
+  text-align: left;
+}
