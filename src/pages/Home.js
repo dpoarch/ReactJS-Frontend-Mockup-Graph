@@ -2,7 +2,48 @@ import React, { useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import { v4 as uuid } from 'uuid';
+import {
+    LineChart,
+    ResponsiveContainer,
+    Legend, Tooltip,
+    Line,
+    XAxis,
+    YAxis,
+    CartesianGrid
+} from 'recharts';
 
+const pdata = [
+    {
+        CompanyName: 'Apple',
+        employee: 150,
+        fees: 120
+    },
+    {
+        CompanyName: 'Google',
+        employee: 121,
+        fees: 12
+    },
+    {
+        CompanyName: 'Amazon',
+        employee: 1623,
+        fees: 10
+    },
+    {
+        CompanyName: 'Microsoft',
+        employee: 580,
+        fees: 5
+    },
+    {
+        CompanyName: 'Tencent',
+        employee: 783,
+        fees: 4
+    },
+    {
+        CompanyName: 'Tesla',
+        employee: 237,
+        fees: 8
+    },
+];
     
 const itemsFromBackend = [
     { id: uuid(), content: "First chart", class:"linechart",  icon: "https://cdn-icons.flaticon.com/png/512/2723/premium/2723575.png?token=exp=1644921505~hmac=662fc9a50ee34a60bf60a9e00331e189" },
@@ -24,7 +65,7 @@ const itemsFromBackend = [
     },
     [uuid()]: {
       name: "Visualization",
-      class: "uk-width-1-4@m",
+      class: "uk-width-1-4",
       InnerClass: "uk-grid",
       items: itemsFromBackend
     }
@@ -127,6 +168,20 @@ function Home(){
                           minHeight: 500
                         }}
                       >
+                <ResponsiveContainer width="100%" aspect={3}>
+                <LineChart data={pdata} margin={{ right: 100 }}>
+                    <CartesianGrid />
+                    <XAxis dataKey="CompanyName" 
+                        interval={'preserveStartEnd'} />
+                    <YAxis></YAxis>
+                    <Legend />
+                    <Tooltip />
+                    <Line dataKey="employee"
+                        stroke="black" activeDot={{ r: 8 }} />
+                    <Line dataKey="fees"
+                        stroke="red" activeDot={{ r: 8 }} />
+                </LineChart>
+            </ResponsiveContainer>
                           <h4>{column.name}</h4>
                         {column.items.map((item, index) => {
                           return (

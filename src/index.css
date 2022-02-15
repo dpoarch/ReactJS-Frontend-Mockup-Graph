@@ -115,3 +115,9 @@ code {
   padding: 0;
   text-align: left;
 }
+div.uk-width-1-4 > div > .uk-grid > .recharts-responsive-container{
+  display: none !important;
+}
+.recharts-responsive-container{
+  margin-top:40px;
+}
