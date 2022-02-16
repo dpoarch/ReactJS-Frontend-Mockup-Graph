@@ -121,3 +121,15 @@ div.uk-width-1-4 > div > .uk-grid > .recharts-responsive-container{
 .recharts-responsive-container{
   margin-top:40px;
 }
+
+.uk-width-1-4 > div > .uk-grid > div > .uk-card > .recharts-responsive-container{
+  display: none;
+}
+
+.uk-width-expand > div > .uk-grid > .uk-width-1-2 {
+  width: 100%;
+}
+
+.uk-width-expand > div > .uk-grid > .uk-width-1-2 > .uk-card> img {
+  display: none;
+}
